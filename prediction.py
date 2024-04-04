@@ -186,7 +186,8 @@ def run():
         prediction = model.predict(combined_input)
         st.write(f"Your house price : {prediction[0][0]:.2f} USD")
         data_inf_df['price'] = prediction[0][0]
-        data_inf_df.to_sql('properties', conn, if_exists='append', index=False)
+        data_inf_df.to_csv('data_raw.csv')
+        # data_inf_df.to_sql('properties', conn, if_exists='append', index=False)
 
 
 if __name__ == "__main__":
