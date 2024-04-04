@@ -1,5 +1,5 @@
 {
-  "devCommand": "streampit run app.py",
+  "devCommand": "streampit run",
   "builds": [
     {
       "src": "app.py",
